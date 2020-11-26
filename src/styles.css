@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+
+/* Fonts declaration */
+@font-face {
+  font-family: bubblegum;
+  src: url(./assets/fonts/BubblegumSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: averia-bold;
+  src: url(./assets/fonts/AveriaSansLibre-Bold.ttf);
+}
+
+@font-face {
+  font-family: averia-light;
+  src: url(./assets/fonts/AveriaSansLibre-Light.ttf);
+}
+
+@font-face {
+  font-family: averia-regular;
+  src: url(./assets/fonts/AveriaSansLibre-Regular.ttf);
+}
+
+@font-face {
+  font-family: port-regular;
+  src: url(./assets/fonts/PortLligatSans-Regular.ttf);
+}
+
+* {
+  font-family: bubblegum, cursive;
+
+}
