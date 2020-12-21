@@ -1,0 +1,28 @@
+<div matDialogContent style="min-height: 300px; position: relative">
+  <div
+    class="row justify-content-around align-items-center"
+    style="min-height: inherit"
+  >
+    <div class="col-md-6 d-none d-md-block overflow-hidden">
+      <img src="./../../../assets/helper-images/contact.svg" width="400px" />
+    </div>
+    <div class="col-12 col-md-6 mb-1 bg-light text-center">
+      <p>Provide us your contact our team will reach you shortly...</p>
+      <form class="m-auto">
+        <mat-form-field class="example-full-width">
+          <mat-label>Contact Number</mat-label>
+          <span matPrefix>+91 &nbsp;</span>
+          <input matInput />
+        </mat-form-field>
+      </form>
+      <button mat-raised-button color="primary">Okay!!</button>
+    </div>
+  </div>
+  .<button
+    mat-icon-button
+    matDialogClose
+    style="position: absolute; top: -10px; right: 10px"
+  >
+    <mat-icon class="text-danger">close</mat-icon>
+  </button>
+</div>

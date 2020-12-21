@@ -1,0 +1,210 @@
+<section
+  #hero
+  id="hero"
+  (mousewheel)="scrollEvent(hero, services, $event)"
+  class=""
+>
+  <p>hero</p>
+</section>
+<section
+  #services
+  id="services"
+  (mousewheel)="scrollEvent(hero, about, $event)"
+  class="container d-flex services align-items-center"
+>
+  <div class="row service-cover m-0 p-0 justify-content-around">
+    <div class="service-card">
+      <img src="./../../../assets/helper-images/bore.jpeg" />
+      <div class="filler p-2 d-flex justify-content-center align-items-center">
+        Expertise in water well drilling...
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="./../../../assets/helper-images/well.jpg" />
+      <div class="filler p-2 d-flex justify-content-center align-items-center">
+        Fully automated sensor rigs can drill upto 2000 feet...
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="./../../../assets/helper-images/pvc.png" />
+      <div class="filler p-2 d-flex justify-content-center align-items-center">
+        We also deal PVP s during drilling...
+      </div>
+    </div>
+  </div>
+</section>
+<section
+  #about
+  id="about"
+  (mousewheel)="scrollEvent(services, credits, $event)"
+  class="row about justify-content-center align-items-center m-0"
+>
+  <carousel
+    [cellsToShow]="1"
+    [cellWidth]="'500px'"
+    [loop]="true"
+    [autoplay]="true"
+    [autoplayInterval]="2000"
+    [pauseOnHover]="true"
+    [margin]="0"
+    [transitionDuration]="2000"
+    [overflowCellsLimit]="0"
+    [arrows]="false"
+    [dots]="true"
+    class="non-mobile"
+  >
+    <div class="carousel-cell">
+      <img src="./../../../assets/assets/img-7.jpeg" />
+    </div>
+    <!-- <div class="carousel-cell">
+      <img src="./../../../assets/assets/img-2.jpeg" />
+    </div> -->
+    <div class="carousel-cell">
+      <img src="./../../../assets/assets/img-3.jpeg" />
+    </div>
+    <div class="carousel-cell">
+      <img src="./../../../assets/assets/img-4.jpeg" />
+    </div>
+    <div class="carousel-cell">
+      <img src="./../../../assets/assets/img-5.jpeg" />
+    </div>
+    <!-- <div class="carousel-cell">
+      <img src="./../../../assets/assets/img-6.jpeg" />
+    </div> -->
+    <div class="carousel-cell">
+      <img src="./../../../assets/assets/img-1.jpeg" />
+    </div>
+  </carousel>
+</section>
+<section
+  #credits
+  id="credits"
+  class="m-auto container p-0 pl-2 pr-2 m-0 d-flex flex-column justify-content-around"
+  (mousewheel)="scrollEvent(about, contact, $event)"
+>
+  <div class="row m-0 p-0 justify-content-center justify-content-md-start">
+    <div
+      class="credit credit-1 d-flex align-items-center justify-content-around"
+    >
+      <img src="./../../../assets/helper-images/india.jpg" />
+      <span>Serving best of all services all over India...</span>
+    </div>
+  </div>
+  <div class="row m-0 p-0 justify-content-center justify-content-md-center">
+    <div
+      class="credit credit-2 d-flex align-items-center justify-content-around"
+    >
+      <img src="./../../../assets/helper-images/30.jpg" />
+      <span>30 years of industrial experience...</span>
+    </div>
+  </div>
+  <div class="row m-0 p-0 justify-content-center justify-content-md-end">
+    <div
+      class="credit credit-3 d-flex align-items-center justify-content-around"
+    >
+      <img src="./../../../assets/helper-images/14.jpg" />
+      <span>Quality of service with 14 shipshape rig machineries...</span>
+    </div>
+  </div>
+  <!-- <div class="credit-2">
+    <img src="./../../../assets/helper-images/30.jpg" />
+  </div>
+  <div class="credit-3">
+    <img src="./../../../assets/helper-images/14.jpg" />
+  </div> -->
+</section>
+<section
+  #contact
+  id="contact"
+  (mousewheel)="scrollEvent(credits, null, $event)"
+>
+  <div
+    class="row m-0 align-items-center justify-content-center justify-content-md-around pb-5 contact"
+    style=""
+  >
+    <div
+      class="col-10 col-md-3 row justify-content-center align-items-center flex-column"
+    >
+      <a [routerLink]="'/admin'">
+        <img
+          src="./../../../assets/logo/logo.png"
+          width="150px"
+          height="70px"
+          style="border-radius: 10px"
+        />
+      </a>
+      <!-- <p class="font-weight-bold text-light">Experienced borewell drillers</p> -->
+    </div>
+    <div class="col-10 col-md-2 row justify-content-center">
+      <ul>
+        <li class="text-center">S.S Borewells</li>
+        <li class="text-center">Velur Road</li>
+        <li class="text-center">Tiruchengode</li>
+        <li class="text-center">Namakkal</li>
+        <li class="text-center">637 211</li>
+
+        <li class="d-flex align-items-center">
+          <mat-icon class="mr-1">call</mat-icon>
+          <span style="white-space: nowrap">(+91) 9443258501</span>
+        </li>
+        <li class="d-flex align-items-center">
+          <mat-icon class="mr-1">mail</mat-icon>
+          <span style="white-space: nowrap">ssborewellss@gmail.com</span>
+        </li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="row justify-content-center">
+        <div class="col-auto m-1 m-md-0 mt-md-1 mb-md-1">
+          <img
+            src="./../../../assets/icons/icons8-facebook-48.png"
+            class="social-icon"
+          />
+        </div>
+        <div class="col-auto m-1 m-md-0 mt-md-1 mb-md-1">
+          <img
+            src="./../../../assets/icons/icons8-instagram-64.png"
+            class="social-icon"
+          />
+        </div>
+        <div class="col-auto m-1 m-md-0 mt-md-1 mb-md-1">
+          <img
+            src="./../../../assets/icons/icons8-twitter-48.png"
+            class="social-icon"
+          />
+        </div>
+        <div class="col-auto m-1 m-md-0 mt-md-1 mb-md-1">
+          <img
+            src="./../../../assets/icons/icons8-whatsapp-48.png"
+            class="social-icon"
+          />
+        </div>
+      </div>
+    </div>
+    <p
+      style="
+        position: absolute;
+        bottom: 0px;
+        left: 50vw;
+        transform: translateX(-50%);
+        white-space: nowrap;
+      "
+      class="text-light"
+    >
+      Copyright © 2020 - S.S.Borewells. All rights reserved.
+    </p>
+  </div>
+</section>
+<button
+  mat-fab
+  style="position: fixed; bottom: 10px; right: 10px"
+  (click)="openContactUs()"
+>
+  <img
+    src="./../../../assets/icons/customer.png"
+    style="transform: translateY(-25%)"
+    width="40px"
+    height="40px"
+  />
+</button>

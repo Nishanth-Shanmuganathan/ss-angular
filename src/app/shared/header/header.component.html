@@ -1,0 +1,108 @@
+<mat-toolbar>
+  <mat-toolbar-row
+    class="justify-content-center justify-content-md-between flex-wrap"
+    style="position: relative; background: #fff"
+    (window:resize)="ngOnInit()"
+  >
+    <a routerLink="/">
+      <img
+        class="logo-img"
+        src="./../../../assets/logo/logo.png"
+        (error)="ngOnInit()"
+      />
+    </a>
+    <div
+      class="collapse-icon d-block d-md-none"
+      (click)="changeDisplay()"
+      *ngIf="!hideMenu"
+    >
+      <img
+        src="./../../../assets/icons/icons8-menu-48.png"
+        width="30px"
+        height="30px"
+      />
+    </div>
+    <div class="nav d-none d-md-block" *ngIf="!hideMenu">
+      <button
+        [ngClass]="{ active: navigationId === 'hero' }"
+        class="nav-btn m-1 pt-1"
+        (click)="navigate('hero')"
+      >
+        Home
+      </button>
+      <button
+        [ngClass]="{ active: navigationId === 'services' }"
+        class="nav-btn m-1 pt-1"
+        (click)="navigate('services')"
+      >
+        Services
+      </button>
+      <button
+        [ngClass]="{ active: navigationId === 'about' }"
+        class="nav-btn m-1 pt-1"
+        (click)="navigate('about')"
+      >
+        Gallery
+      </button>
+      <button
+        [ngClass]="{ active: navigationId === 'credits' }"
+        class="nav-btn m-1 pt-1"
+        (click)="navigate('credits')"
+      >
+        Credits
+      </button>
+      <button
+        [ngClass]="{ active: navigationId === 'contact' }"
+        class="nav-btn m-1 pt-1"
+        (click)="navigate('contact')"
+      >
+        Contact us
+      </button>
+    </div>
+  </mat-toolbar-row>
+  <mat-toolbar-row
+    *ngIf="mobile && !hideMenu"
+    class="d-flex d-md-none justify-content-center p-0"
+    style="z-index: -1"
+    [ngClass]="{
+      slide: !close,
+      hide: close
+    }"
+  >
+    <button
+      [ngClass]="{ active: navigationId === 'hero' }"
+      class="nav-btn m-1 pt-1"
+      (click)="navigate('hero')"
+    >
+      Home
+    </button>
+    <button
+      [ngClass]="{ active: navigationId === 'services' }"
+      class="nav-btn m-1 pt-1"
+      (click)="navigate('services')"
+    >
+      Services
+    </button>
+    <button
+      [ngClass]="{ active: navigationId === 'about' }"
+      class="nav-btn m-1 pt-1"
+      (click)="navigate('about')"
+    >
+      Gallery
+    </button>
+    <button
+      [ngClass]="{ active: navigationId === 'credits' }"
+      class="nav-btn m-1 pt-1"
+      (click)="navigate('credits')"
+    >
+      Credits
+    </button>
+    <button
+      [ngClass]="{ active: navigationId === 'contact' }"
+      class="nav-btn m-1 pt-1"
+      (click)="navigate('contact')"
+    >
+      Contact us
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>

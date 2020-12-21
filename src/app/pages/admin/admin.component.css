@@ -1,0 +1,34 @@
+:host {
+  display: block;
+  margin-top: 100px;
+  position: absolute;
+  top: 40vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+.full-width {
+  width: 300px;
+}
+
+mat-form-field {
+  display: block;
+  margin: auto;
+}
+
+.img {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 125px;
+}
+
+.img img {
+  border-radius: 125px;
+}
+
+button {
+  width: 200px;
+  margin: auto;
+}
