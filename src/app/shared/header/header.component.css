@@ -1,12 +1,16 @@
 mat-toolbar {
   width: 100%;
   height: fit-content;
-  min-height: 70px;
+  min-height: 100px;
   position: fixed;
   top: 0px;
   left: 0px;
   background-color: transparent;
   z-index: 10;
+}
+
+mat-toolbar-row {
+  min-height: inherit;
 }
 
 .logo-img {

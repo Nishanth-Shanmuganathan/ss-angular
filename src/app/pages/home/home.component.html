@@ -4,7 +4,7 @@
   (mousewheel)="scrollEvent(hero, services, $event)"
   class=""
 >
-  <p>hero</p>
+  <p></p>
 </section>
 <section
   #services
@@ -13,23 +13,11 @@
   class="container d-flex services align-items-center"
 >
   <div class="row service-cover m-0 p-0 justify-content-around">
-    <div class="service-card">
-      <img src="./../../../assets/helper-images/bore.jpeg" />
-      <div class="filler p-2 d-flex justify-content-center align-items-center">
-        Expertise in water well drilling...
-      </div>
-    </div>
-    <div class="service-card">
-      <img src="./../../../assets/helper-images/well.jpg" />
-      <div class="filler p-2 d-flex justify-content-center align-items-center">
-        Fully automated sensor rigs can drill upto 2000 feet...
-      </div>
-    </div>
-    <div class="service-card">
-      <img src="./../../../assets/helper-images/pvc.png" />
-      <div class="filler p-2 d-flex justify-content-center align-items-center">
-        We also deal PVP s during drilling...
-      </div>
+    <div class="col-auto" *ngFor="let service of serviceContent">
+      <app-service-card
+        [content]="service.content"
+        [image]="service.image"
+      ></app-service-card>
     </div>
   </div>
 </section>

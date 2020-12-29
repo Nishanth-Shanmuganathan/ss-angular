@@ -7,7 +7,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class DataService {
-  navigationSubject = new BehaviorSubject<string>('hero')
+  navigationSubject = new BehaviorSubject<string>('services')
 
   constructor(
     private dialog: MatDialog

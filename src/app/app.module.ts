@@ -9,6 +9,7 @@ import { TopNotificationComponent } from './shared/top-notification/top-notifica
 import { MainNotificationComponent } from './shared/main-notification/main-notification.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AdminComponent } from './pages/admin/admin.component';
+import { ServiceCardComponent } from './shared/service-card/service-card.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AdminComponent } from './pages/admin/admin.component';
     TopNotificationComponent,
     MainNotificationComponent,
     HomeComponent,
-    AdminComponent
+    AdminComponent,
+    ServiceCardComponent
   ],
   imports: [
     BrowserModule,
